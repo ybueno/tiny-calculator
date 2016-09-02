@@ -1,0 +1,14 @@
+{
+  "name": "tiny-calc",
+  "version": "1.0.0",
+  "description": "A tiny and simple calculator for your most basic needs.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Juliana R.",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "mocha": "^3.0.2"
+  }
+}
