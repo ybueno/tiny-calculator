@@ -1,0 +1,23 @@
+html
+    head
+        title Tiny Calc
+    body
+        .container
+            h3 Conheça já uma maneira mais facil de fazer contas!
+            | Teste agora!
+
+            h3 Adição!
+            form(action="/adicao" id='adicao' method='post')
+                input(name='campo1' id='campo1' type='text')
+                |   +
+                input(name='campo2' id='campo2' type='text')
+                input(type='submit' value='=')
+                span=res_add
+
+            h3 Subtracao!
+            form(action="/subtracao" id='subtracao' method='post')
+                input(name='campo1' id='campo1' type='text')
+                |   -
+                input(name='campo2' id='campo2' type='text')
+                input(type='submit' value='=')
+                span=res_sub
