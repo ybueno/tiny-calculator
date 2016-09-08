@@ -12,7 +12,9 @@ env:
 before_install:
   - which heroku || wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
   - chmod +x heroku_auth
-
+  - sudo apt-get update
+  - sudo apt-get install expect
+  
 build:
     ci:
       - npm install
