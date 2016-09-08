@@ -12,6 +12,5 @@ build:
       - npm install
       - npm test
 
-
-on_success:
-  - git push -f https://git.heroku.com/secure-sierra-80955.git master
+    on_success:
+      - git push -f https://git.heroku.com/secure-sierra-80955.git master
