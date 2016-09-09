@@ -38,3 +38,4 @@ jspm_packages
 
 shippable.yml
 .travis.yml
+heroku_auth
