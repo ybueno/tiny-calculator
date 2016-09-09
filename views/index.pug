@@ -1,23 +1,41 @@
+link(href='bower_components/bootstrap/dist/css/bootstrap.css', rel='stylesheet')
+link(href='bower_components/bootstrap/dist/css/bootstrap-theme.css', rel='stylesheet')
+link(href='style.css', rel='stylesheet')
+
 html
     head
         title Tiny Calc
     body
         .container
-            h3 Conheça já uma maneira mais facil de fazer contas!
-            | Teste agora!
+            .row
+                .col-lg-2
+                .col-lg-8.center
+                    br
+                    h1.bold Tiny Calc
+                    br
+                    h4 Conheça já uma maneira mais facil de fazer contas.
+                    | Com o Tiny Calc você consegue fazer contas complexas utilizando
+                    | apenas duas operações.
 
-            h3 Adição!
-            form(action="/adicao" id='adicao' method='post')
-                input(name='campo1' id='campo1' type='text')
-                |   +
-                input(name='campo2' id='campo2' type='text')
-                input(type='submit' value='=')
-                span=res_add
+                    h3 Adição
+                    | Faça contas usando todos os números de 0 à 9, não apenas 0 e 1!
+                    br
+                    br
+                    form(action="/adicao" id='adicao' method='post')
+                        input(name='campo1' id='campo1' type='text')
+                        |   +
+                        input(name='campo2' id='campo2' type='text')
+                        input(type='submit' value='=')
+                        span=res_add
 
-            h3 Subtracao!
-            form(action="/subtracao" id='subtracao' method='post')
-                input(name='campo1' id='campo1' type='text')
-                |   -
-                input(name='campo2' id='campo2' type='text')
-                input(type='submit' value='=')
-                span=res_sub
+                    br
+                    h3 Subtração
+                    | Na verdade, é módulo da diferença.
+                    br
+                    br
+                    form(action="/subtracao" id='subtracao' method='post')
+                        input(name='campo1' id='campo1' type='text')
+                        |   -
+                        input(name='campo2' id='campo2' type='text') 
+                        input(type='submit' value='=')
+                        span=res_sub
