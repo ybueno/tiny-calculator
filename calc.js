@@ -4,6 +4,6 @@ module.exports = {
 			 },
 
 		sub: function (a, b) {
-		            return Math.abs(a - b);
+		            return Math.abs(a * b);
 			 }
 };
