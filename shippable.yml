@@ -13,7 +13,7 @@ build:
   - npm install
   - npm test
 
- on_sucess:
+ on_success:
   - ./heroku_auth
   - git push -f https://git.heroku.com/devops-ybueno.git  master
 
