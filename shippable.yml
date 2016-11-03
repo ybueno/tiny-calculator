@@ -6,7 +6,7 @@ node_js:
 env:
  global:
   - APP_NAME=devops-ybueno
-  - HEROKU_API = 0beb6fa3-bc34-4689-8e3b-4c438636a02f
+  - HEROKU_API=0beb6fa3-bc34-4689-8e3b-4c438636a02f
 
 build:
  ci:
